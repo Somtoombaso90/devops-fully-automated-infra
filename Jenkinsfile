@@ -82,7 +82,7 @@ pipeline {
         }
         
         stage('Terraform destroy') {
-           steps {
+            steps {
               echo 'Terraform destroy...'                             
               sh 'sudo terraform destroy --auto-approve'
                
